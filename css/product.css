@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+}
+
+
+
+.main-container-grid {
+    display: grid;
+    grid-template-rows: 1fr 13fr 1fr;
+    height: 100%;
+    grid-row-gap: 1em;
+}
+
+
+.r1,
+.r3 {
+    height: 50px;
+    background-color: #9BC1BC;
+    padding: 1em;
+    align-self: center;
+    align-items: center;
+    color: #F4F1BB;
+
+
+}
+
+.r3 {
+    align-items: center;
+    text-align: center;
+}
+
+
+.r2 {
+    height: 100%;
+    background-color: #9BC1BC;
+
+}
+
+
+.two-column {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    background-color: #9BC1BC;
+    grid-column-gap: 1em;
+}
+
+.c1 {
+    min-width: 200px;
+}
+
+.c1,
+.c2 {
+    background-color: #9BC1BC;
+}
+
+.txt-center {
+    text-align: center;
+    margin: 15px auto 15px;
+    border-bottom: 1px solid #F4F1BB;
+    padding-bottom: 15px;
+    color: #F4F1BB;
+}
+
+.left-nav {
+    list-style-type: none;
+
+}
+
+
+.left-nav>li>a {
+    display: block;
+    padding: 15px 0px 15px 30px;
+    background-color: #9BC1BC;
+    transition-duration: 0.7s;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F4F1BB;
+}
+
+.left-nav>li>a:hover {
+    background-color: #F4F1BB;
+}
+
+.c2 {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em; */
+    width: 100%;
+}
+
+.h2-content {
+    grid-column: 1 / 5;
+    height: 22px;
+    width: 100%;
+}
+
+.c2>img {
+    width: 100%;
+    align-self: center;
+    max-height: 130px;
+}
+
+.gallery-table {
+   table-layout: fixed;
+    width: 100%;
+}
+
+.gallery-table thead {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #9BC1BC;
+    color:#F4F1BB;
+}
+
+.gallery-table td {
+    border: 1px solid #9BC1BC
+}
+
+.gallery-table>tbody>tr>td>img {
+    max-width: 150px;
+}
+
+.buy-now {
+    padding: 7px 16px;
+    background-color: #F4F1BB;
+    float: right;
+    border-radius: 6px;
+    color:  #9BC1BC;
+    font-size: 16px;
+    transition-duration: 0.5s;
+
+}
+
+.buy-now:hover {
+    background-color: #E6EBE0;
+}
